@@ -1,0 +1,14 @@
+const http = require("http");
+const PORT = 3000 || process.env.PORT;
+
+const server = http.createServer((req, res) => {
+    const urlPath = req.url;
+
+    if (urlPath === "/") {
+        res.write("<h1>served from http core module</h1>");
+        res.write("<p>This is the website page</p>");
+        res.end();
+    }
+});
+
+server.listen(PORT);
