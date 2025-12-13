@@ -13,9 +13,6 @@
         "type": "git",
         "url": "https://github.com/sumanta-k/express-server"
     },
-    "publishConfig": {
-        "registry": "https://npm.pkg.github.com"
-    },
     "author": "sumanta kumar mohanta",
     "license": "MIT",
     "dependencies": {
