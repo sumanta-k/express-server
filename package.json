@@ -1,5 +1,5 @@
 {
-    "name": "@sumanta-k/express-server",
+    "name": "express-server-sumanta",
     "version": "1.0.0",
     "description": "Express server",
     "main": "server.js",
@@ -9,6 +9,13 @@
     "keywords": [
         "express"
     ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/sumanta-k/express-server"
+    },
+    "publishConfig": {
+        "registry": "https://npm.pkg.github.com"
+    },
     "author": "sumanta kumar mohanta",
     "license": "MIT",
     "dependencies": {
