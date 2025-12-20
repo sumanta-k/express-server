@@ -13,9 +13,9 @@ const server = createServer((req, res) => {
         res.write("<head>");
         res.write("<title>About</title>");
         res.write("</head>");
-	res.write("<body>");
-	res.write("<h1>We are in About page</h1>");
-	res.write("</body>");
+        res.write("<body>");
+        res.write("<h1>We are in About page</h1>");
+        res.write("</body>");
         res.write("</html>");
     }
 });
