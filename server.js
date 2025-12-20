@@ -1,7 +1,7 @@
 const { createServer } = require("http");
 const PORT = 3000 || process.env.PORT;
 
-const server = http.createServer((req, res) => {
+const server = createServer((req, res) => {
     const urlPath = req.url;
 
     if (urlPath === "/") {
