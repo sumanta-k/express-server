@@ -15,6 +15,14 @@ const server = createServer((req, res) => {
         res.write("<h1>We are in About page</h1>");
         res.write("</body>");
         res.write("</html>");
+    } else if (req.url === "/greet") {
+        res.write("<html>");
+        res.write("<head><title>Greet</title></head>");
+        res.write(
+            "<body><h1>Ichigo is carrying all the BURDEN on his shoulder.</body>",
+        );
+        res.write("</html>");
+        res.end();
     }
 });
 
