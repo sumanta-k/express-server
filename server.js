@@ -10,9 +10,7 @@ const server = createServer((req, res) => {
         res.end();
     } else if (urlPath === "/about") {
         res.write("<html>");
-        res.write("<head>");
-        res.write("<title>About</title>");
-        res.write("</head>");
+        res.write("<head>about page</head>");
         res.write("<body>");
         res.write("<h1>We are in About page</h1>");
         res.write("</body>");
