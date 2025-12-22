@@ -6,8 +6,12 @@ const server = createServer((req, res) => {
     const urlPath = req.url;
 
     if (urlPath === "/") {
+        res.write("<html>");
+        res.write("<head><title>Home</title></head>");
+        res.write("<body>");
         res.write("<h1>served from http core module</h1>");
-        res.write("<p>This is the website page</p>");
+        res.write("</body>");
+        res.write("</html>");
         res.end();
     } else if (urlPath === "/about") {
         res.write("<html>");
