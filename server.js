@@ -18,8 +18,19 @@ app.get("/", (req, res) => {
 
 app.get("/api", (req, res) => {
     // res.json(people);
-    console.log(req.query);
-    res.json(pupil);
+
+    let filteredData = startups;
+    const { industry, country, continent, is_seeking_funding, has_mvp } =
+        req.query;
+
+    if (industry) {
+        filteredData = filteredData.filter(
+            (startup) =>
+                startup.industry.toLowerCase() === industry.toLowerCase(),
+        );
+    }
+    // console.log(req.query);
+    res.json(filteredData);
 });
 
 app.listen(PORT, () => {
