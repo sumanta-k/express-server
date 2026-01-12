@@ -16,6 +16,10 @@ app.get("/", (req, res) => {
     res.json(startups);
 });
 
+app.get("/api", (req, res) => {
+    res.json(people);
+});
+
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
 });
