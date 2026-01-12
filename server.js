@@ -1,5 +1,7 @@
 import express from "express";
 
+import { startups } from "./data/data.js";
+
 const PORT = process.env.PORT || 3000;
 
 const data = {
