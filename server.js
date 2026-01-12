@@ -1,7 +1,7 @@
 import express from "express";
 
 import { startups } from "./data/data.js";
-import { people } from "./data/data2.js";
+import { people as pupil } from "./data/data2.js";
 
 const PORT = process.env.PORT || 3000;
 
@@ -17,7 +17,9 @@ app.get("/", (req, res) => {
 });
 
 app.get("/api", (req, res) => {
-    res.json(people);
+    // res.json(people);
+    console.log(req.query);
+    res.json(pupil);
 });
 
 app.listen(PORT, () => {
