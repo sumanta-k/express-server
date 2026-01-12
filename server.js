@@ -16,6 +16,8 @@ app.get("/", (req, res) => {
     res.json(startups);
 });
 
+// NOTE:  this is epic stuff happening over here
+
 app.get("/api", (req, res) => {
     // res.json(people);
 
