@@ -12,7 +12,7 @@ const data = {
 const app = express();
 
 app.get("/", (req, res) => {
-    res.json(data);
+    res.json(startups);
 });
 
 app.listen(PORT, () => {
