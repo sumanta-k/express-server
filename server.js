@@ -33,6 +33,13 @@ app.get("/api", (req, res) => {
                 startup.industry.toLowerCase() === industry.toLowerCase(),
         );
     }
+
+    if (country) {
+        filteredData = filteredData.filter(
+            (startup) =>
+                startup.country.toLowerCase() === country.toLowerCase(),
+        );
+    }
     // console.log(req.query);
     res.json(filteredData);
 });
