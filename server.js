@@ -24,6 +24,8 @@ app.get("/api", (req, res) => {
     let filteredData = startups;
     const { industry, country, continent, is_seeking_funding, has_mvp } =
         req.query;
+    console.log(industry, country, continent, is_seeking_funding, has_mvp);
+    console.log(req.query);
 
     if (industry) {
         filteredData = filteredData.filter(
