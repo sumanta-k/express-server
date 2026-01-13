@@ -44,6 +44,17 @@ app.get("/api", (req, res) => {
     res.json(filteredData);
 });
 
+app.get("/api/:field/:term", (req, res) => {
+    const { field, term } = req.params;
+    console.log(field, term);
+
+    const filteredData = startups.filter((startup) => {
+        return startup[field].toLowerCase() === term.toLowerCase();
+    });
+
+    res.json(filteredData);
+});
+
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
 });
